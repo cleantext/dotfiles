@@ -1,5 +1,5 @@
 *
-.vimrc/*
+.vimrc/**
 !.vimrc
 !.w3m/keymap
 !.w3m/keymap.default
