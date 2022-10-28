@@ -5,13 +5,14 @@ set signcolumn=yes
 "set nohlsearch
 set hidden
 set noerrorbells
+set conceallevel=2
 	
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 "set expandtab
 set smartindent
 
-set nowrap
+"set nowrap
 "set ignorecase
 "set ignoresmartcase
 set incsearch
