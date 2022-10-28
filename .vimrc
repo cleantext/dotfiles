@@ -12,7 +12,7 @@ set shiftwidth=4
 "set expandtab
 set smartindent
 
-"set nowrap
+set nowrap
 "set ignorecase
 "set ignoresmartcase
 set incsearch
