@@ -21,9 +21,10 @@ keymap v NULL
 keymap a NULL
 keymap t NULL
 keymap C-q NULL
+keymap LEFT NULL
 
-keymap LEFT, SPC-h PREV_PAGE 
-keymap RIGHT, SPC-l GOTO_LINK
+keymap LEFT PREV_PAGE 
+keymap RIGHT GOTO_LINK
 keymap C-w CLOSE_TAB
 keymap C-t NEW_TAB
 keymap C-f SUBMIT
