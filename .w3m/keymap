@@ -23,7 +23,7 @@ keymap t NULL
 keymap C-q NULL
 keymap LEFT NULL
 
-keymap LEFT PREV_PAGE 
+keymap LEFT PREV
 keymap RIGHT GOTO_LINK
 keymap C-w CLOSE_TAB
 keymap C-t NEW_TAB
