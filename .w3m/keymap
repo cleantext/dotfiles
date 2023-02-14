@@ -14,7 +14,7 @@
 
 keymap C-d NULL
 keymap C-b NULL
-keymap H NULL
+# keymap H NULL
 keymap ESC-a NULL
 keymap ESC-b NULL
 keymap v NULL
