@@ -6,6 +6,7 @@ set signcolumn=yes
 set hidden
 set noerrorbells
 set conceallevel=2
+set noswapfile " disable the swapfile
 	
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -17,11 +18,15 @@ set wrap linebreak "softwrap
 "set ignoresmartcase
 set incsearch
 set scrolloff=8
-set colorcolumn=80
+" set colorcolumn=80 "display a colored column used as a guide for the number of indentations you do in code
+
+"remap 'exiting Insert mode' to jk:
+" inoremap jk <ESC> 
 
 " colo alduin
 set number
 syntax on
+
 "hi Normal ctermbg=NONE guibg=NONE
 "hi EndOfBuffer ctermbg=NONE guibg=NONE
 "hi NonText ctermbg=NONE guibg=NONE
