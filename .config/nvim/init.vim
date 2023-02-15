@@ -13,6 +13,8 @@ set shiftwidth=4
 "set expandtab
 set smartindent
 
+set autochdir acd
+
 set wrap linebreak "softwrap
 "set ignorecase
 "set ignoresmartcase
@@ -33,6 +35,8 @@ syntax on
 
 "set background=light
 
+set rtp+=~/.fzf " adding fzf to vim
+
 " PLUGINS!!
 
 " https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
@@ -51,6 +55,8 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " Load plugins.
 call plug#begin()
 
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
 	Plug 'gruvbox-community/gruvbox'
 	"Plug 'sheerun/vim-polyglot'
 	Plug 'mattn/emmet-vim' "possible swap for tpope/vim-ragtag
