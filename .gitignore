@@ -1,6 +1,5 @@
 *
 .vimrc/**
-.config/nvim/**
 !.config/nvim/init.vim
 !.vimrc
 !.w3m/keymap
