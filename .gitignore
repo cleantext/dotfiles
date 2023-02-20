@@ -1,6 +1,33 @@
-*
-.vimrc/**
+# ignore everything
+/*
+
+# UNIGNORE FILES IN ROOT 
 !.vimrc
+
+# UNIGNORE FILES IN ROOT/SUB-FOLDER (ONE LEVEL DEEP)
+
+# 1. Unignore .w3m/
+!.w3m/
+
+# 2. Ignore all files and directories in .w3m/
+.w3m/*
+
+# 3. Unignore select files in .w3m/
 !.w3m/keymap
 !.w3m/keymap.default
+!.w3m/config
+
+# UNIGNORE FILES IN ROOT/SUB/SUB-FOLDER (TWO LEVELS DEEP)
+ 
+# 1. Unignore /.q3a
+!.q3a/
+
+# 2. Ignores all files and directories in /.q3a
+.q3a/*
+
+# 3. Except for the .q3a/baseq3/ dir and its contents
+!.q3a/baseq3/
+.q3a/baseq3/*
+
+# 4. Unignore q3config in baseq3 subfolder
 !.q3a/baseq3/q3config.cfg

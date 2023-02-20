@@ -32,5 +32,7 @@ keymap C-d ADD_BOOKMARK
 keymap C-b BOOKMARK
 keymap b SEARCH_PREV
 
+keymap C-RIGHT TAB_LINK
+
 #keymap NEXT_TAB C-^[[6~
 #keymap PREV_TAB C-^[[5~
