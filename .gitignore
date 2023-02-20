@@ -1,6 +1,6 @@
 *
 .vimrc/**
-!.config/nvim/init.vim
 !.vimrc
 !.w3m/keymap
 !.w3m/keymap.default
+!.q3a/baseq3/q3config.cfg

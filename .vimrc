@@ -90,4 +90,4 @@ hi EndOfBuffer ctermbg=NONE guibg=NONE
 hi NonText ctermbg=NONE guibg=NONE
 
 " Better statusline as per: https://www.vi-improved.org/recommendations/
-set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
+" set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
