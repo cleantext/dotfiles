@@ -84,7 +84,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 
 
-colo gruvbox
+colo gruvbox " somehow this needs to be on for proper theming to work with gruvbox-community/gruvbox
 hi Normal ctermbg=NONE guibg=NONE
 hi EndOfBuffer ctermbg=NONE guibg=NONE
 hi NonText ctermbg=NONE guibg=NONE
