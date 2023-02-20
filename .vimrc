@@ -13,6 +13,9 @@ set shiftwidth=4
 "set expandtab
 set smartindent
 
+" set working directory according to current buffer
+set autochdir acd
+
 set wrap linebreak "softwrap
 "set ignorecase
 "set ignoresmartcase
@@ -33,6 +36,18 @@ syntax on
 
 "set background=light
 
+set rtp+=~/.fzf " adding fzf to vim
+
+" Vim Splits - Move Faster and More Naturally
+" src: https://thoughtbot.com/blog/vim-splits-move-faster-and-more-naturally
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+" Open new split panes to right and bottom, which feels more natural than Vim’s default
+set splitbelow
+set splitright
+
 " PLUGINS!!
 
 " https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
@@ -51,12 +66,23 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " Load plugins.
 call plug#begin()
 
+"	Plug 'powerline/powerline'
+"	Plug 'ap/vim-buftabline'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
 	Plug 'gruvbox-community/gruvbox'
 	"Plug 'sheerun/vim-polyglot'
 	Plug 'mattn/emmet-vim' "possible swap for tpope/vim-ragtag
 	"Plug 'jaxbot/semantic-highlight.vim' 
 	"Plug 'tpope/vim-surround'
 call plug#end()
+
+" vim-airline: Smarter tab line - Automatically displays all buffers when there's only one tab open
+let g:airline#extensions#tabline#enabled = 1
+
+
 
 colo gruvbox
 hi Normal ctermbg=NONE guibg=NONE
