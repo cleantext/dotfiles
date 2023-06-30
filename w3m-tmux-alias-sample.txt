@@ -1,0 +1,2 @@
+# add to ~/.bashrc
+alias w3mux='tmux new-session w3m https://lite.qwant.com/'
